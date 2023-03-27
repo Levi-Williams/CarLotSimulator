@@ -48,6 +48,8 @@ namespace CarLotSimulator
 
             Cars.Add(chevy);
 
+            Console.WriteLine(CarLot.numberOfCars);
+
             //Car 2//
 
             Car ford = new Car() { Make = "Ford", Year = 2015, Model = "Focus", EngineNoise = "Clank", HonkNoise = "boop" };
@@ -57,6 +59,8 @@ namespace CarLotSimulator
             ford.MakeHonkNoise(ford.HonkNoise);
 
             Cars.Add(ford);
+
+            Console.WriteLine(CarLot.numberOfCars);
 
             //Car 3//
 
@@ -68,8 +72,12 @@ namespace CarLotSimulator
 
             Cars.Add(toyota);
 
+            Console.WriteLine(CarLot.numberOfCars);
 
-            foreach(var Car in Cars) { Console.WriteLine($" Make: {Car.Make}, Year: {Car.Year}, Model: {Car.Model}, Engine Noise Description: {Car.EngineNoise}, Honk Noise Description: {Car.HonkNoise} "); }
+
+            foreach (var Car in Cars) { Console.WriteLine($" Make: {Car.Make}, Year: {Car.Year}, Model: {Car.Model}, Engine Noise Description: {Car.EngineNoise}, Honk Noise Description: {Car.HonkNoise} "); }
+
+            
 
         }
     }
